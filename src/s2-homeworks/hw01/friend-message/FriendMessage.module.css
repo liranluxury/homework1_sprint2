@@ -25,7 +25,7 @@
     margin: 10px 0;
     border-radius: 10px 10px 10px 0;
 
-    background-color: rgba(29, 33, 38, 0.1);
+    background-color: #e6edf2;
 
     font-size: 16px;
     font-weight: 400;
@@ -45,7 +45,7 @@
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
-    border-bottom: 15px solid rgba(29, 33, 38, 0.1);
+    border-bottom: 15px solid  #e6edf2;
 
 
 }
