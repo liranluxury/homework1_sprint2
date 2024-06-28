@@ -1,0 +1,73 @@
+
+.message {
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse; /* Переворачиваем порядок элементов */
+}
+
+.imageAndText {
+    width: 462px;
+    height: 77px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 10px;
+    flex-direction: row-reverse; /* Переворачиваем порядок элементов */
+}
+
+.imageAndText img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px; /* отступ между изображением и текстом */
+}
+
+.text {
+    position: relative;
+
+    border-radius: 10px 10px 0px 10px;
+    background-color: #0066CC;;
+    padding: 10px;
+    margin: 10px 0;
+
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+
+}
+
+.text:after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* положение треугольника */
+    right: -14px; /* смещение от левого края */
+    width: 0;
+    height: 0;
+    border-right:15px solid transparent;
+    border-bottom: 15px solid #0066CC;;
+
+
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.messageText {
+    margin-top: 5px;
+    white-space: pre-wrap; /* для корректного отображения переноса строк */
+}
+
+.time {
+    font-size: 10px;
+    font-weight: 600;
+    color: gray;
+    margin-top: 5px; /* отступ сверху для времени */
+
+}
+.fotoWrapper{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}

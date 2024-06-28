@@ -1,0 +1,50 @@
+.sendForm {
+    display: flex;
+    align-items: baseline;
+    margin-left: 30px;
+}
+
+.textarea {
+    width: 976px;
+    height: 44px;
+    margin-right: 40px;
+    border: 1px solid rgba(29, 33, 38, 0.1);
+    border-radius: 20px;
+    resize: none; /* Отключить изменение размера */
+    box-sizing: border-box; /* Учитывать padding и border в размерах */
+    outline: none; /* Убрать стандартное выделение */
+    padding: 20px;
+    overflow: hidden; /* Скрыть полосы прокрутки */
+    overflow-x: hidden; /* Скрыть горизонтальную полосу прокрутки */
+    overflow-y: hidden; /* Скрыть вертикальную полосу прокрутки */
+
+    &:focus {
+        border-color: rgba(29, 33, 38, 0.2); /* Цвет границы при фокусе */
+        box-shadow: 0 0 8px rgba(29, 33, 38, 0.1); /* Тень при фокусе */
+    }
+}
+
+.button {
+    display: inline-block; /* Строчно-блочный элемент */
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #0066CC;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    transition: transform ease-in 0.3s; /* Плавный переход */
+
+}
+
+.button:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+.button:active {
+    background-color: #004494; /* Цвет фона при нажатии */
+    transform: translate(1px, 1px); /* Сдвиг на 1 пиксель вниз и вправо */
+}
