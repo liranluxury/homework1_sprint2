@@ -6,11 +6,10 @@
 }
 
 .friendImageAndText {
-    width: 462px;
     height: 77px;
     display: flex;
-    align-items:end;
-    gap:10px;
+    align-items: end;
+    gap: 10px;
 }
 
 .friendImageAndText img {
@@ -45,7 +44,7 @@
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
-    border-bottom: 15px solid  #e6edf2;
+    border-bottom: 15px solid #e6edf2;
 
 
 }
@@ -67,7 +66,8 @@
     margin-top: 5px; /* отступ сверху для времени */
 
 }
-.friendFotoWrapper{
+
+.friendFotoWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
