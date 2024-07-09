@@ -4,9 +4,13 @@
 }
 
 .hw {
-
+    margin: 30px auto;
+    max-width: 900px;
 }
 
 .hwTitle {
-
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fed389;
 }

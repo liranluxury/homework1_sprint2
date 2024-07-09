@@ -41,8 +41,6 @@
     position: absolute;
     bottom: 0; /* положение треугольника */
     left: -14px; /* смещение от левого края */
-    width: 0;
-    height: 0;
     border-left: 15px solid transparent;
     border-bottom: 15px solid #e6edf2;
 
@@ -56,7 +54,8 @@
 
 .friendMessageText {
     margin-top: 5px;
-    white-space: pre-wrap; /* для корректного отображения переноса строк */
+    /*white-space: pre-wrap; !* для корректного отображения переноса строк *!*/
+    word-wrap: break-word;
 }
 
 .friendTime {
