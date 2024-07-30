@@ -27,12 +27,13 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
     }
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
+        onChange?.(e)// означает, что функция onChange вызывается только если она определена.
+        onChangeChecked?.(e.currentTarget.checked)
         // задачка на написание онченджа
-
     }
 
-    const finalInputClassName = s.checkbox
-        + (className ? ' ' + className : '')
+    const finalInputClassName =`${s.checkbox} ${className ||''}`
+        // + (className ? ' ' + className : '')
 
     return (
         <label className={s.label}>
