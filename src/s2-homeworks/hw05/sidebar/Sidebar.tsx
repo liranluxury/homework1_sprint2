@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import s from './Sidebar.module.css'
 import {PATH} from '../Pages'
 import closeIcon from './closeOutline.svg'
+import styled from 'styled-components';
 
 type PropsType = {
     open: boolean
@@ -17,7 +18,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
             {/*затемнение справа от открытого меню*/}
             {open && <div className={s.background} onClick={handleClose}/>}
 
-            <aside className={sidebarClass}>
+            <aside className={sidebarClass }>
                 <button className={s.close} onClick={handleClose}>
                     <img
                         src={closeIcon}
@@ -31,7 +32,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-pre-junior-link'}
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
-                        // className={...} // делает студент
+                        className={({isActive})=>isActive ? s.active + " "+ s.nav : s.nav } // делает студент
                     >
                         Pre-junior
                     </NavLink>
@@ -39,7 +40,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-junior-link'}
                         to={PATH.JUNIOR}
                         onClick={handleClose}
-                        // className={...} // делает студент
+                        className={({isActive})=>isActive ? s.active + " "+ s.nav : s.nav} // делает студент
                     >
                         Junior
                     </NavLink>
@@ -47,7 +48,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-junior-plus-link'}
                         to={PATH.JUNIOR_PLUS}
                         onClick={handleClose}
-                        // className={...} // делает студент
+                        className={({isActive})=>isActive ? s.active + " "+ s.nav : s.nav} // делает студент
                     >
                         Junior Plus
                     </NavLink>
